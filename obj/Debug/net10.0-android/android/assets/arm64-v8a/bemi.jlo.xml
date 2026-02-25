@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc64e15856d7831c7b22" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="bemi.MainActivity, bemi">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc64e15856d7831c7b22" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="bemi.MainApplication, bemi" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="bemi" module-name="bemi.dll">
+    <type assembly-qualified-name="bemi.MainActivity, bemi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="bemi.MainActivity" java-key="crc64e15856d7831c7b22.MainActivity" managed-key="bemi.MainActivity" partial-assembly-qualified-name="bemi.MainActivity, bemi" />
+    <type assembly-qualified-name="bemi.MainApplication, bemi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="bemi.MainApplication" java-key="crc64e15856d7831c7b22.MainApplication" managed-key="bemi.MainApplication" partial-assembly-qualified-name="bemi.MainApplication, bemi" />
+  </acw-types>
+</api>

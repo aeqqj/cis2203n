@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bemi.MainPage"
+             BackgroundColor="#101010"
+             Title="bemi">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,250"
+            Spacing="20">
+
+            <Label
+                Text="BMI Calculator"
+                Style="{StaticResource Headline}"
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Start" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="16">
+                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                    <Label Text="Weight (kg)" FontSize="16" />
+                    <Entry x:Name="WeightEntry" Placeholder="e.g. 65" Keyboard="Numeric" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                    <Label Text="Height (cm)" FontSize="16" />
+                    <Entry x:Name="HeightEntry" Placeholder="e.g. 172" Keyboard="Numeric" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <Button
+                x:Name="CalculateBtn"
+                Text="Calculate BMI"
+                Clicked="OnCalculateClicked"
+                HorizontalOptions="Fill"
+                BackgroundColor="#2a2a2a"
+                TextColor="White"
+                SemanticProperties.Hint="Calculates your Body Mass Index" />
+
+            <Frame
+                x:Name="ResultFrame"
+                IsVisible="False"
+                CornerRadius="12"
+                Padding="20"
+                BackgroundColor="#101010"
+                BorderColor="Gray">
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="16">
+                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                        <Label
+                            x:Name="BmiValueLabel"
+                            FontSize="48"
+                            HorizontalTextAlignment="Center"
+                            FontAttributes="Bold" />
+                        <Label
+                            x:Name="BmiCategoryLabel"
+                            HorizontalTextAlignment="Center"
+                            FontSize="16" />
+                    </VerticalStackLayout>
+                    <Label
+                        Grid.Column="1"
+                        x:Name="BmiAdviceLabel"
+                        FontSize="14"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        HorizontalTextAlignment="Start" />
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,1 @@
+<resources><style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style><style name="Maui.SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"><item name="android:windowBackground">@color/splash_background</item></style><style name="Maui.MainTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style></resources>
